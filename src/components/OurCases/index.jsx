@@ -5,6 +5,8 @@ import a1 from "../../assets/a1.JPG";
 import b2 from "../../assets/b2.JPG";
 import a2 from "../../assets/a2.JPG";
 
+import { Link } from "react-router-dom";
+
 const cases = [
   {
     id: "implants",
@@ -35,9 +37,12 @@ export default function OurCases() {
             <p className="our-cases__subtitle">معرض الأعمال</p>
             <h2 className="our-cases__title">نتائج تتحدث عن نفسها</h2>
           </div>
-          <a href="#all-cases" className="our-cases__btn">
+          {/* <a href="#all-cases" className="our-cases__btn">
             مشاهدة جميع الحالات
-          </a>
+          </a> */}
+          <Link to="/cases" className="our-cases__btn">
+            مشاهدة جميع الحالات
+          </Link>
         </div>
         <div className="our-cases__grid">
           {cases.map(({ id, beforeImage, afterImage, title, description }) => (
