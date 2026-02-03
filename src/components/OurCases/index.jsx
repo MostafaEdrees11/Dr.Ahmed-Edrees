@@ -1,21 +1,26 @@
 import "./OurCases.css";
+import b1 from "../../assets/b1.JPG";
+import a1 from "../../assets/a1.JPG";
+
+import b2 from "../../assets/b2.JPG";
+import a2 from "../../assets/a2.JPG";
 
 const cases = [
   {
     id: "implants",
-    beforeImage:
-      "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400&q=80",
-    afterImage:
-      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&q=80",
+    beforeImage: b1,
+    // "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400&q=80",
+    afterImage: a1,
+    // "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&q=80",
     title: "زراعة الأسنان الرقمية",
     description: "استبدال الأسنان المفقودة بجودة فائقة.",
   },
   {
     id: "whitening",
-    beforeImage:
-      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&q=80",
-    afterImage:
-      "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=400&q=80",
+    beforeImage: b2,
+    // "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&q=80",
+    afterImage: a2,
+    // "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=400&q=80",
     title: "تبييض الأسنان بالليزر",
     description: "جلسة واحدة لمدة 45 دقيقة فقط.",
   },

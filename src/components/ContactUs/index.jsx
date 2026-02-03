@@ -8,22 +8,22 @@ const contactInfo = [
   {
     icon: LocationOnIcon,
     label: "الموقع",
-    value: "شارع التخصصي، الرياض، المملكة العربية السعودية",
+    value: "بناأبوصير الطريق العام بجوار مول ابن الحلال",
   },
   {
     icon: PhoneIcon,
     label: "الهاتف",
-    value: "+966 50 123 4567",
+    value: "01156958788",
   },
   {
     icon: ScheduleIcon,
     label: "ساعات العمل",
-    value: "السبت - الخميس 9:00 ص - 10:00 م",
+    value: "السبت - الخميس 5:00 م - 10:00 م",
   },
 ];
 
 // رقم الواتساب الخاص بالدكتور (غير الرقم ده برقم الدكتور الحقيقي)
-const DOCTOR_WHATSAPP = "201017653879";
+const DOCTOR_WHATSAPP = "201156958788";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -114,7 +114,7 @@ export default function ContactUs() {
         <div className="contact-us__form-card">
           <h2 className="contact-us__form-title">تواصل معنا</h2>
           <p className="contact-us__form-desc">
-            املأ النموذج أدناه وسيقوم فريقنا بالتواصل معك في أقرب وقت ممكن
+            املأ النموذج أدناه وسيقوم الدكتور بالتواصل معك في أقرب وقت ممكن
             للإجابة على جميع استفساراتك.
           </p>
           <form className="contact-us__form" onSubmit={handleSubmit} noValidate>
@@ -135,7 +135,7 @@ export default function ContactUs() {
               <input
                 id="contact-phone"
                 type="tel"
-                placeholder="05xxxxxxxx"
+                placeholder="01xxxxxxxx"
                 autoComplete="tel"
                 value={formData.phone}
                 onChange={handleChange}

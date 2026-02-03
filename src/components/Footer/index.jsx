@@ -35,7 +35,7 @@ export default function Footer() {
               alt="tooth"
             />
           </span>
-          <span className="footer__name">د. أحمد إدريس</span>
+          <span className="footer__name">د. أحمد نبوى إدريس</span>
         </div>
 
         <div className="footer__social">
@@ -62,7 +62,7 @@ export default function Footer() {
         <div className="footer__divider" />
 
         <p className="footer__copyright">
-          © 2026 جميع الحقوق محفوظة لعيادة الدكتور أحمد إدريس
+          © 2026 جميع الحقوق محفوظة لعيادة الدكتور أحمد نبوى إدريس
         </p>
       </div>
     </footer>

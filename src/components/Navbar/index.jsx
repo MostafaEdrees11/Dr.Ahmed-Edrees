@@ -51,14 +51,14 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <a href="https://wa.me/201156958788">
+        <a href="https://wa.me/201156958788" target="_blank">
           <button type="button" className="navbar__cta navbar__cta--desktop">
             تواصل معى
           </button>
         </a>
 
         <div className="navbar__mobile-actions">
-          <a href="#contact">
+          <a href="https://wa.me/201156958788" target="_blank">
             <button type="button" className="navbar__cta navbar__cta--mobile">
               تواصل معى
             </button>

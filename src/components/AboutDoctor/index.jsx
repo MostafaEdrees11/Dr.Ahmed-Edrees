@@ -1,7 +1,8 @@
 import "./AboutDoctor.css";
 
 const doctorImage =
-  "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&q=80";
+  "https://thumbs.dreamstime.com/b/male-dentist-doctor-dental-clinic-portrait-male-dentist-doctor-dental-clinic-portrait-happy-dentistry-doctor-wearing-115999694.jpg";
+// "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&q=80";
 
 export default function AboutDoctor() {
   return (
