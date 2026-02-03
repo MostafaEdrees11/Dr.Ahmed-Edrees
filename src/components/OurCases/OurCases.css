@@ -1,0 +1,185 @@
+/* معرض الأعمال: نفس خلفية الصفحة، عنوان + زر، كروت قبل/بعد مع hover */
+.our-cases {
+  --primary: #137fec;
+  --text: #0d141b;
+  --text-muted: #4c739a;
+  font-family: "Cairo", sans-serif;
+  background: #f6f7f8;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.our-cases__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.our-cases__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.our-cases__titles {
+  text-align: right;
+}
+
+.our-cases__subtitle {
+  color: var(--primary);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.our-cases__title {
+  color: var(--text);
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.our-cases__btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: #fff;
+  border: 2px solid rgba(19, 127, 236, 0.4);
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+  white-space: nowrap;
+}
+
+.our-cases__btn:hover {
+  background: rgba(19, 127, 236, 0.08);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.our-cases__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.our-cases__card {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.our-cases__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.our-cases__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  aspect-ratio: 2 / 1;
+  min-height: 200px;
+}
+
+.our-cases__image-block {
+  position: relative;
+  overflow: hidden;
+  background: #e8eef4;
+}
+
+.our-cases__image-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.our-cases__tag {
+  position: absolute;
+  top: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+  border-radius: 9999px;
+  backdrop-filter: blur(6px);
+}
+
+.our-cases__tag--before {
+  inset-inline-start: 0.75rem;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.our-cases__tag--after {
+  inset-inline-end: 0.75rem;
+  background: rgba(19, 127, 236, 0.85);
+}
+
+.our-cases__card-content {
+  padding: 1.25rem 1.5rem;
+  text-align: right;
+}
+
+.our-cases__card-title {
+  color: var(--text);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.our-cases__card-desc {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* موبايل: عمود واحد */
+@media (max-width: 768px) {
+  .our-cases {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .our-cases__header {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .our-cases__titles {
+    text-align: center;
+  }
+
+  .our-cases__title {
+    font-size: 1.5rem;
+  }
+
+  .our-cases__btn {
+    text-align: center;
+  }
+
+  .our-cases__grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .our-cases__images {
+    aspect-ratio: 2 / 1;
+    min-height: 160px;
+  }
+
+  .our-cases__card-content {
+    text-align: center;
+  }
+}

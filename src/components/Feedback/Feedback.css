@@ -1,0 +1,123 @@
+/* ماذا يقول مرضانا: نفس خلفية الصفحة، عنوان + نجوم، كروت آراء مع hover */
+.feedback {
+  --primary: #137fec;
+  --text: #0d141b;
+  --text-muted: #4c739a;
+  font-family: "Cairo", sans-serif;
+  background: #f6f7f8;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.feedback__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feedback__header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.feedback__number {
+  display: block;
+  color: var(--primary);
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
+}
+
+.feedback__title {
+  color: var(--text);
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.feedback__stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.feedback__star {
+  color: #f5a623 !important;
+  font-size: 1.5rem !important;
+  filter: drop-shadow(0 0 1px rgba(245, 166, 35, 0.5));
+}
+
+.feedback__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.feedback__card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.75rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.feedback__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.feedback__quote {
+  color: var(--text);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  margin: 0 0 1.25rem;
+  text-align: right;
+}
+
+.feedback__quote-mark {
+  color: var(--primary);
+  font-size: 1.25rem;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.feedback__name {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  text-align: right;
+}
+
+.feedback__condition {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  margin: 0;
+  text-align: right;
+}
+
+/* موبايل: عمود واحد */
+@media (max-width: 768px) {
+  .feedback {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .feedback__number {
+    font-size: 2.5rem;
+  }
+
+  .feedback__title {
+    font-size: 1.5rem;
+  }
+
+  .feedback__header {
+    margin-bottom: 1.75rem;
+  }
+
+  .feedback__grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
